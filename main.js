@@ -115,7 +115,6 @@ async function salvarFilme(evento) {
     ano: Number(document.getElementById("ano").value),
     diretor: document.getElementById("diretor").value.trim(),
     nota: document.getElementById("nota").value ? Number(document.getElementById("nota").value) : null,
-    imagem_url: document.getElementById("imagem_url").value.trim() || null,
     sinopse: document.getElementById("sinopse").value.trim() || null,
   };
 
@@ -149,7 +148,6 @@ function editarFilme(id) {
   document.getElementById("ano").value = filme.ano;
   document.getElementById("diretor").value = filme.diretor;
   document.getElementById("nota").value = filme.nota ?? "";
-  document.getElementById("imagem_url").value = filme.imagem_url ?? "";
   document.getElementById("sinopse").value = filme.sinopse ?? "";
 
   formTitle.textContent = "Alterar Filme";
