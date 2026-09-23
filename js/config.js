@@ -1,4 +1,4 @@
-const SUPABASE_URL = "COLE_AQUI_A_URL_DO_SEU_PROJETO";
-const SUPABASE_ANON_KEY = "COLE_AQUI_A_SUA_CHAVE_ANON_PUBLICA";
+const SUPABASE_URL = "https://kpnhfrowpfocsekiuind.supabase.co/rest/v1/filmes";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtwbmhmcm93cGZvY3Nla2l1aW5kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk1NjUyNzIsImV4cCI6MjEwNTE0MTI3Mn0.zWOi6dwB3XEXAZog1S5oiw2y_yeBlUUI8K0hb6PqA5w";
 
 const db = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
