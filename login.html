@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Catálogo de Filmes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <h1>🎬 Catálogo de Filmes</h1>
+      <p>Sistema de Autenticação com Supabase</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card login-card">
+      <h2>Acesso Restrito</h2>
+      <p class="login-subtitle">Faça login para acessar o catálogo de filmes</p>
+
+      <form id="login-form">
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seuemail@exemplo.com" required autocomplete="email" />
+        </div>
+
+        <div class="field">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Digite sua senha" required autocomplete="current-password" />
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-full">Entrar</button>
+        </div>
+      </form>
+
+      <div id="login-mensagem" class="mensagem" hidden></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Projeto Atividade Supabase — PWIII — Sistema de Login</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="auth.js"></script>
+</body>
+
+</html>

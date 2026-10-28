@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catálogo de Filmes</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="header">
-    <div class="container header-content">
-      <h1>🎬 Catálogo de Filmes</h1>
-      <p>Cadastre, consulte, altere e exclua seus filmes favoritos</p>
+    <div class="container header-content header-top">
+      <div>
+        <h1>🎬 Catálogo de Filmes</h1>
+        <p>Cadastre, consulte, altere e exclua seus filmes favoritos</p>
+      </div>
+      <div class="user-info">
+        <span id="usuario-email" class="user-email"></span>
+        <button type="button" id="btn-sair" class="btn btn-secondary btn-small">Sair</button>
+      </div>
     </div>
   </header>
 
@@ -94,6 +102,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config.js"></script>
+  <script src="auth-guard.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
